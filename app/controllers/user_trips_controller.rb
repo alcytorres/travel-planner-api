@@ -5,4 +5,9 @@ class UserTripsController < ApplicationController
     render :index
   end
 
+  def show
+    @user_trip = UserTrip.find_by(id: params[:id])
+    render :show
+  end
+
 end
