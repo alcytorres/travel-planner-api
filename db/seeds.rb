@@ -46,3 +46,13 @@
 # trip = Trip.create(location: "Ko Phi Phi", latitude: 7.73694, longitude: 98.777207, country: "Thailand", continent: "Asia", year: 2019, highlights: "Maya Bay, Monkey Beach, Pileh Lagoon, Viking Cave, Bamboo Island", image_url: "https://i.pinimg.com/originals/c1/d0/d7/c1d0d7f16de27b40458a101af8226383.jpg")
 
 # trip = Trip.create(location: "Chichen Itza", latitude: 20.684285, longitude: -88.567783, country: "Mexico", continent: "North America", year: 2015, highlights: "El Castillo, Great Ball Court, Temple of the Warriors, Sacred Cenote, Caracol", image_url: "https://images5.alphacoders.com/587/thumb-1920-587948.jpg")
+
+
+# UserTrip.create(user_id: 1, trip_id: 2)
+# UserTrip.create(user_id: 1, trip_id: 3)
+# UserTrip.create(user_id: 1, trip_id: 6)
+# UserTrip.create(user_id: 2, trip_id: 6)
+# UserTrip.create(user_id: 2, trip_id: 7)
+# UserTrip.create(user_id: 3, trip_id: 14)
+# UserTrip.create(user_id: 3, trip_id: 16)
+
