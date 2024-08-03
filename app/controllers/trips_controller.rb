@@ -8,4 +8,9 @@ class TripsController < ApplicationController
     render :index
   end
 
+  def show
+    @trip = Trip.find_by(id: params[:id])
+    render :show
+  end
+
 end

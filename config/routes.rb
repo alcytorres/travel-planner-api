@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
 
   get "/trips" => "trips#index"
+  get "/trips/:id" => "trips#show"
 
   get "/user_trips" => "user_trips#index"
 
