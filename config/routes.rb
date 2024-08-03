@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get "/trips" => "trips#index"
   get "/trips/:id" => "trips#show"
   post "/trips" => "trips#create"
+  patch "/trips/:id" => "trips#update"
 
 
   get "/user_trips" => "user_trips#index"

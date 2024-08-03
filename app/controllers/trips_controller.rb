@@ -27,4 +27,19 @@ class TripsController < ApplicationController
     render :show
   end
 
+  def update
+    @trip = Trip.find_by(id: params[:id])
+    @trip.update(
+      location: params[:location] || @trip.location,
+      latitude: params[:latitude] || @trip.latitude,
+      longitude: params[:longitude] || @trip.longitude,
+      country: params[:country] || @trip.country,
+      continent: params[:continent] || @trip.continent,
+      year: params[:year] || @trip.year,
+      highlights: params[:highlights] || @trip.highlights,
+      image_url: params[:image_url] || @trip.image_url,
+    )
+    render :show
+  end
+
 end
