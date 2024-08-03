@@ -20,6 +20,7 @@ Rails.application.routes.draw do
 
   get "/user_trips" => "user_trips#index"
   get "/user_trips/:id" => "user_trips#show"
+  post "/user_trips" => "user_trips#create"
 
 
 

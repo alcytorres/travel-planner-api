@@ -10,4 +10,13 @@ class UserTripsController < ApplicationController
     render :show
   end
 
+  def create
+    @user_trip = UserTrip.create(
+      # user_id: current_user.id,
+      user_id: params[:user_id],
+      trip_id: params[:trip_id],
+    )
+    render :show
+  end
+
 end
