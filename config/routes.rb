@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   get "/trips" => "trips#index"
   get "/trips/:id" => "trips#show"
+  post "/trips" => "trips#create"
+
 
   get "/user_trips" => "user_trips#index"
 

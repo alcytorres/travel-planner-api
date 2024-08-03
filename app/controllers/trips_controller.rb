@@ -13,4 +13,18 @@ class TripsController < ApplicationController
     render :show
   end
 
+  def create
+    @trip = Trip.create(
+      location: params[:location],
+      latitude: params[:latitude],
+      longitude: params[:longitude],
+      country: params[:country],
+      continent: params[:continent],
+      year: params[:year],
+      highlights: params[:highlights],
+      image_url: params[:image_url],
+    )
+    render :show
+  end
+
 end
