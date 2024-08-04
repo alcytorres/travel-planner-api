@@ -68,3 +68,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# Enables Cross-Origin Resource Sharing (CORS)
+gem "rack-cors"
+
