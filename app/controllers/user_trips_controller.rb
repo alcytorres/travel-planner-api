@@ -30,8 +30,12 @@ class UserTripsController < ApplicationController
 
   def destroy
     @user_trip = UserTrip.find_by(id: params[:id])
-    @user_trip.destroy
-    render json: { message: "User trip destroyed successfully" }
+    if @user_trip
+      @user_trip.destroy
+      render json: { message: "User trip destroyed successfully" }
+    else
+      render json: { error: "User trip not found" }, status: :not_found
+    end
   end
 
 end
