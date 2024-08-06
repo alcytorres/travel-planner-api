@@ -1,7 +1,9 @@
 class UserTripsController < ApplicationController
+  # before_action :authenticate_user
 
   def index
-    @user_trips = UserTrip.all
+    # @user_trips = UserTrip.all
+    @user_trips = UserTrip.where(user_id: current_user.id)
     render :index
   end
 
@@ -12,8 +14,8 @@ class UserTripsController < ApplicationController
 
   def create
     @user_trip = UserTrip.create(
-      # user_id: current_user.id,
-      user_id: params[:user_id],
+      user_id: current_user.id,
+      # user_id: params[:user_id],
       trip_id: params[:trip_id],
     )
     render :show

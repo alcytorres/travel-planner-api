@@ -19,6 +19,9 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  # Makes current_user accessible in views and controllers
+  helper_method :current_user
+
   def authenticate_user
     unless current_user
       render json: {}, status: :unauthorized
