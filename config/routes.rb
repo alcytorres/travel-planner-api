@@ -18,8 +18,8 @@ Rails.application.routes.draw do
   patch "/trips/:id" => "trips#update"
 
   # The trips that a user has added to their list should show here
-  get "/my_trips" => "trips#my_trips"  # logged in
-  # Note there is no my_trips controller
+  #     path          controller # method
+  get "/user_trips" => "trips#user_trips"  # logged in
 
   get "/user_trips" => "user_trips#index"
   get "/user_trips/:id" => "user_trips#show"

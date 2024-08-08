@@ -13,7 +13,7 @@ class TripsController < ApplicationController
   end
 
   # Index action
-  def my_trips
+  def user_trips
     p "current_user"
     p current_user
     p "current_user"

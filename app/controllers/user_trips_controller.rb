@@ -1,5 +1,5 @@
 class UserTripsController < ApplicationController
-  # before_action :authenticate_user
+  before_action :authenticate_user
 
   def index
     # @user_trips = UserTrip.all
@@ -31,13 +31,37 @@ class UserTripsController < ApplicationController
   end
 
   def destroy
-    @user_trip = UserTrip.find_by(id: params[:id])
+    Rails.logger.info "Params: #{params.inspect}"
+    @user_trip = current_user.user_trips.find_by(id: params[:id])
     if @user_trip
       @user_trip.destroy
       render json: { message: "User trip destroyed successfully" }
     else
+      Rails.logger.info "User trip not found for ID: #{params[:id]}"
       render json: { error: "User trip not found" }, status: :not_found
     end
   end
-
 end
+
+#   def destroy
+#     @user_trip = UserTrip.find_by(id: params[:id])
+#     if @user_trip
+#       @user_trip.destroy
+#       render json: { message: "User trip destroyed successfully" }
+#     else
+#       render json: { error: "User trip not found" }, status: :not_found
+#     end
+#   end
+
+# end
+
+#   def destroy
+#     @user_trip = current_user.user_trips.find_by(id: params[:id])
+#     if @user_trip
+#       @user_trip.destroy
+#       render json: { message: "User trip destroyed successfully" }
+#     else
+#       render json: { error: "User trip not found" }, status: :not_found
+#     end
+#   end
+# end
