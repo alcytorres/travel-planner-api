@@ -9,6 +9,16 @@ class TripsController < ApplicationController
     # Fetches all records from the trips table in the database and assigns them to the instance variable @trips
     @trips = Trip.all
     # Renders the index view template. It looks for a template file named index.json.jbuilder in the views/trips directory
+
+    if params[:category].present?
+      @trips = @trips.where(category: params[:category])
+    end
+
+    if params[:year_sort].present?
+      order_direction = params[:year_sort] == 'asc' ? :asc : :desc
+      @trips = @trips.order(year: order_direction)
+    end
+
     render :index
   end
 
@@ -23,6 +33,16 @@ class TripsController < ApplicationController
       # This is not running properly: @trips = current_user.trips
       @trips = current_user.trips
       # Renders the index view to display the user's trips
+
+      if params[:category].present?
+        @trips = @trips.where(category: params[:category])
+      end
+
+      if params[:year_sort].present?
+        order_direction = params[:year_sort] == 'asc' ? :asc : :desc
+        @trips = @trips.order(year: order_direction)
+      end
+
       render :index
     else
       # Renders a JSON response with an error message:
@@ -40,6 +60,7 @@ class TripsController < ApplicationController
       location: params[:location],
       latitude: params[:latitude],
       longitude: params[:longitude],
+      category: params[:category],
       country: params[:country],
       continent: params[:continent],
       year: params[:year],
@@ -55,6 +76,7 @@ class TripsController < ApplicationController
       location: params[:location] || @trip.location,
       latitude: params[:latitude] || @trip.latitude,
       longitude: params[:longitude] || @trip.longitude,
+      category: params[:category] || @trip.category,
       country: params[:country] || @trip.country,
       continent: params[:continent] || @trip.continent,
       year: params[:year] || @trip.year,

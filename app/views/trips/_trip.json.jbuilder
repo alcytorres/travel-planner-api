@@ -3,6 +3,7 @@ json.id trip.id
 json.location trip.location
 json.latitude trip.latitude
 json.longitude trip.longitude
+json.category trip.category
 json.country trip.country
 json.continent trip.continent
 json.year trip.year
