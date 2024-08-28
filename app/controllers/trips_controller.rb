@@ -6,43 +6,51 @@ class TripsController < ApplicationController
     p "current_user"
     p current_user
     p "current_user"
-    # Fetches all records from the trips table in the database and assigns them to the instance variable @trips
-    @trips = Trip.all
-    # Renders the index view template. It looks for a template file named index.json.jbuilder in the views/trips directory
 
+    # @trips = Trip.all
+    # Fetches all records from the trips table in the database and assigns them to the instance variable @trips
+
+    # @trips = Trip.order(:id)
+    # Order trips by id in ascending order
+
+    # Fetch trips that are not yet in the user's trips and sorts them by id in ascending order
+    @trips = Trip.where.not(id: current_user.trips.pluck(:id)).order(:id)
+
+    # Filter trips by category on trips index page
     if params[:category].present?
       @trips = @trips.where(category: params[:category])
     end
 
-    if params[:year_sort].present?
-      order_direction = params[:year_sort] == 'asc' ? :asc : :desc
-      @trips = @trips.order(year: order_direction)
-    end
-
+    # Renders the index view template. It looks for a template file named index.json.jbuilder in the views/trips directory
     render :index
   end
 
   # Index action
   def user_trips
+    # Checks if current_user is present
     p "current_user"
     p current_user
     p "current_user"
-    # Checks if current_user is present
-    if current_user
-      # This line attempts to fetch the trips associated with the logged-in user. If successful, it stores them in @trips.
-      # This is not running properly: @trips = current_user.trips
-      @trips = current_user.trips
-      # Renders the index view to display the user's trips
 
+    # This line attempts to fetch the trips associated with the logged-in user. If successful, it stores them in @trips.
+    if current_user
+
+      # @trips = current_user.trips.order(:id)
+
+      @trips = current_user.trips
+
+      # Filter trips by category on user_trips index page
       if params[:category].present?
         @trips = @trips.where(category: params[:category])
       end
 
+      # Sort trips by year in user_trips index page
       if params[:year_sort].present?
         order_direction = params[:year_sort] == 'asc' ? :asc : :desc
         @trips = @trips.order(year: order_direction)
       end
 
+      # Renders the index view to display the user's trips
       render :index
     else
       # Renders a JSON response with an error message:
