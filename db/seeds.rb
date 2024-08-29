@@ -187,3 +187,22 @@
 
 # trip = Trip.create(location: "Kirkjufell", latitude: 64.9641, longitude: -23.0788, category: "Mountain", country: "Iceland", continent: "Europe", year: 2030, highlights: "Icelandic Icon, Scenic, Views, Hiking, Photography", image_url: "https://www.icelandtravel.is/_next/image/?url=https%3A%2F%2Fcontent.icelandtravel.is%2Fwp-content%2Fuploads%2F2019%2F03%2FKirkjufell-mountain.jpg&w=3840&q=75")
 
+
+
+# trip = Trip.create(location: "Salinas", latitude: -2.2125, longitude: -80.967, category: "Beach", country: "Ecuador", continent: "South America", year: 2030, highlights: "Resort town, Yacht clubs, Nightlife, Beaches, Water sports", image_url: "https://media-cdn.tripadvisor.com/media/photo-m/1280/15/23/c1/a4/salinas-beach-santa-elena.jpg")
+
+# trip = Trip.create(location: "Casablanca", latitude: -2.1667, longitude: -80.91, category: "Beach", country: "Ecuador", continent: "South America", year: 2030, highlights: "Private beaches, Luxurious homes, Scenic views, Quiet, Exclusive", image_url: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/179029412.jpg?k=c19b6294678744cb55e1b08ae3fe09ac6cf3143974232aad8970438f31ae558a&o=&hp=1")
+
+# trip = Trip.create(location: "Pedernales", latitude: 0.0706, longitude: -80.0478, category: "Beach", country: "Ecuador", continent: "South America", year: 2030, highlights: "Laid-back, Fishing, Mangroves, Sandy beach, Secluded", image_url: "https://playasecuador.globaldir.com.ec/wp-content/uploads/2019/04/playa-de-pedernales-en-manabi-ecuador.jpg")
+
+# trip = Trip.create(location: "Tortuga Bay", latitude: -0.7489, longitude: -90.3176, category: "Beach", country: "Ecuador", continent: "South America", year: 2030, highlights: "Pristine, Wildlife, Crystal clear water, White sand, Scenic views", image_url: "https://i0.wp.com/www.boldtravel.com/wp-content/uploads/2015/06/Galapagos-Tortuga-Bay-Turtle-Reserve-28-of-58-June-15.jpg?ssl=1")
+
+# trip = Trip.create(location: "Isla de Lobos", latitude: -0.8032, longitude: -89.4098, category: "Beach", country: "Ecuador", continent: "South America", year: 2030, highlights: "Remote, Wildlife, Clear waters, Snorkeling, Scenic", image_url: "https://ecogal.aero/wp-content/uploads/2023/07/isla-lobos.jpg")
+
+# trip = Trip.create(location: "Playa del Carmen", latitude: 20.6296, longitude: -87.0739, category: "Beach", country: "Mexico", continent: "North America", year: 2030, highlights: "Resort town, Coral reefs, Nightlife, Beaches, Shopping", image_url: "https://expertvagabond.com/wp-content/uploads/playa-del-carmen-travel-guide.jpg")
+
+# trip = Trip.create(location: "Punta Cana", latitude: 18.5601, longitude: -68.3287, category: "Beach", country: "Dominican Republic", continent: "North America", year: 2030, highlights: "Resort area, White sand beaches, All-inclusive, Nightlife, Water sports", image_url: "https://www.puntacanaadventures.com/wp-content/uploads/2017/09/best-beach-in-punta-cana-1-1.jpg")
+
+# trip = Trip.create(location: "Playa Costa Verde", latitude: -12.084, longitude: -77.0611, category: "Beach", country: "Peru", continent: "South America", year: 2030, highlights: "Urban beach, Scenic views, Popular, Surfing, Boardwalk", image_url: "https://upload.wikimedia.org/wikipedia/commons/9/96/Miraflores_Costa_Verde_Skyline_%28Lima%2C_Peru%29.jpg")
+
+# trip = Trip.create(location: "Playa La Mina Pisco (Paracas)", latitude: -13.857, longitude: -76.26, category: "Beach", country: "Peru", continent: "South America", year: 2030, highlights: "Scenic, Desert beaches, National Reserve, Wildlife, Tranquil", image_url: "https://mochileaperu.com/wp-content/uploads/2021/10/playa-de-la-mina.jpg")
