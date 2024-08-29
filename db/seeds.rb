@@ -150,3 +150,40 @@
 # trip = Trip.create(location: "Hawaii", latitude: 19.896766, longitude: -155.582782, country: "United States", continent: "North America", year: 2030, highlights: "Beaches, Volcanoes, Surfing, Luau, Tropical landscapes", image_url: "https://img.cruisecritic.net/cms-sb/f/1005231/321d8a8620/hawaii_18325.jpg?auto=format&fit=crop&crop=entropy&q=25&w=2048&ixlib=react-9.8.1")
 
 # trip = Trip.create(location: "Havasu Falls", latitude: 36.255417, longitude: -112.698449, country: "United States", continent: "North America", year: 2030, highlights: "Waterfalls, Turquoise pools, Grand Canyon, Hiking, Remote beauty", image_url: "https://www.thecanyon.com/images/Havasu-Falls.jpg")
+
+
+
+# trip = Trip.create(location: "Aconcagua", latitude: -32.6532, longitude: -70.0109, category: "Mountain", country: "Argentina", continent: "South America", year: 2030, highlights: "Summit, Andes, Glaciers, Climbing, Views", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Aconcagua2016.jpg/1920px-Aconcagua2016.jpg")
+
+# trip = Trip.create(location: "Denali", latitude: 63.0695, longitude: -151.0074, category: "Mountain", country: "United States", continent: "North America", year: 2030, highlights: "Highest in North America, Wilderness, Glaciers, Wildlife, Peaks", image_url: "https://assets.princess.com/is/image/princesscruises/denali-alaska-mount-mckinley-snow-capped-mountain:16x9?ts=1720025827260")
+
+# trip = Trip.create(location: "Illimani", latitude: -16.6429, longitude: -67.8411, category: "Mountain", country: "Bolivia", continent: "South America", year: 2030, highlights: "Andes, Snowy Peaks, La Paz, Glaciers, Climbing", image_url: "https://preview.redd.it/the-illimani-is-a-mountain-in-la-paz-bolivia-part-of-the-v0-mpdxum9k5kna1.jpg?width=640&crop=smart&auto=webp&s=df1602bbd10d3c216f86afde0a96e9da6ac19e72")
+
+# trip = Trip.create(location: "Mount Kilimanjaro", latitude: -3.0674, longitude: 37.3556, category: "Mountain", country: "Tanzania", continent: "Africa", year: 2030, highlights: "Highest in Africa, Safari, Volcanic, Views, Trekking", image_url: "https://www.climbing-kilimanjaro.com/wp-content/uploads/2020/11/Mount-Kilimanjaro-Meaning.jpg")
+
+# trip = Trip.create(location: "Mount Elbrus", latitude: 43.3499, longitude: 42.4376, category: "Mountain", country: "Russia", continent: "Europe", year: 2030, highlights: "Caucasus, Snow, Europe-Asia Border, Glaciers, Summit", image_url: "https://www.mountaindesigns.com/medias/summiting-mt-elbrus-1.jpeg?context=bWFzdGVyfGltYWdlc3wzMzYwMjl8aW1hZ2UvanBlZ3xpbWFnZXMvaGUwL2hmOC8xMTM2OTg3MTk5OTAwNi9zdW1taXRpbmctbXQtZWxicnVzLTEuanBlZ3w2NjAyZGQ3YTE0NmIxODJiMzBlNjZjNWM2ZjFmY2IxOGNmNTM5OWQyYTM3YmJhZjFkZThkMGQyYWI4YTlmMWM2")
+
+# trip = Trip.create(location: "Vinson Massif", latitude: -78.525, longitude: -85.6167, category: "Mountain", country: "Antarctica", continent: "Antarctica", year: 2030, highlights: "Antarctic, Remote, Glaciers, Ice, Highest Point", image_url: "https://assets.rmiguides.com/_includes/_images/programs/vinson-header.jpg")
+
+# trip = Trip.create(location: "Puncak Jaya", latitude: -4.082, longitude: 137.16, category: "Mountain", country: "Indonesia", continent: "Oceania", year: 2030, highlights: "Papua, Tropics, Carstensz Pyramid, Snow, Climbing", image_url: "https://newguineabirdingtrip.home.blog/wp-content/uploads/2021/03/explore-papua-66-1.jpg")
+
+# trip = Trip.create(location: "Mont Blanc", latitude: 45.8326, longitude: 6.8652, category: "Mountain", country: "France/Italy", continent: "Europe", year: 2030, highlights: "Alps, Mont Blanc Tunnel, Glaciers, Skiing, Hiking", image_url: "https://www.muchbetteradventures.com/magazine/content/images/2023/01/mont-blanc-climb--1-.jpg")
+
+# trip = Trip.create(location: "Illiniza Norte", latitude: -0.66, longitude: -78.713, category: "Mountain", country: "Ecuador", continent: "South America", year: 2030, highlights: "Twin Peaks, Glaciers, Andes, Quito Views, Climbing", image_url: "https://gulliver.com.ec/wp-content/uploads/2019/01/Illinizas-facts.jpeg")
+
+# trip = Trip.create(location: "Corazón", latitude: -0.4745, longitude: -78.5294, category: "Mountain", country: "Ecuador", continent: "South America", year: 2030, highlights: "Andes, Hiking, Quito Views, Volcanic, Scenic", image_url: "https://i.pinimg.com/736x/7e/22/3a/7e223ab0d813b488b8923cb6c583a278.jpg")
+
+# trip = Trip.create(location: "Integral de los Pichincha", latitude: -0.169, longitude: -78.568, category: "Mountain", country: "Ecuador", continent: "South America", year: 2030, highlights: "Andes, Quito, Views, Volcanic, Summit", image_url: "https://theportuguesetraveler.com/wp-content/uploads/2023/10/climbing-pichincha-volcano-61.jpg")
+
+# trip = Trip.create(location: "Imbabura", latitude: 0.288, longitude: -78.354, category: "Mountain", country: "Ecuador", continent: "South America", year: 2030, highlights: "Andes, Scenic, Volcano, Hiking, Views", image_url: "https://naturegalapagos.com/wp-content/uploads/2014/02/Imbabura-Ecuador.jpg")
+
+# trip = Trip.create(location: "Matterhorn", latitude: 45.9763, longitude: 7.6586, category: "Mountain", country: "Switzerland", continent: "Europe", year: 2030, highlights: "Iconic, Swiss Alps, Climbing, Skiing, Views", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Matterhorn_from_Domh%C3%BCtte_-_2.jpg/1200px-Matterhorn_from_Domh%C3%BCtte_-_2.jpg")
+
+# trip = Trip.create(location: "Mount Fuji", latitude: 35.3606, longitude: 138.7274, category: "Mountain", country: "Japan", continent: "Asia", year: 2030, highlights: "Iconic, Cherry Blossoms, Volcanic, Cultural, Views", image_url: "https://cdn.britannica.com/03/75503-050-F65891FA/volcanic-cone-Japan-Mount-Fuji.jpg")
+
+# trip = Trip.create(location: "Mount Kosciuszko", latitude: -36.455833, longitude: 148.263333, category: "Mountain", country: "Australia", continent: "Australia", year: 2030, highlights: "Australia's Highest, Kosciuszko National Park, Snowy, Hiking, Views", image_url: "https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638892135/EducationHub/photos/mount-kosciuszko.jpg")
+
+# trip = Trip.create(location: "Mitre Peak", latitude: -44.636, longitude: 167.919, category: "Mountain", country: "New Zealand", continent: "Oceania", year: 2030, highlights: "New Zealand, Fiordland, Scenic, Hiking, Remote", image_url: "https://www.alluringworld.com/wp-content/uploads/2016/11/2-Mitre.jpg")
+
+# trip = Trip.create(location: "Kirkjufell", latitude: 64.9641, longitude: -23.0788, category: "Mountain", country: "Iceland", continent: "Europe", year: 2030, highlights: "Icelandic Icon, Scenic, Views, Hiking, Photography", image_url: "https://www.icelandtravel.is/_next/image/?url=https%3A%2F%2Fcontent.icelandtravel.is%2Fwp-content%2Fuploads%2F2019%2F03%2FKirkjufell-mountain.jpg&w=3840&q=75")
+
